@@ -1,0 +1,13 @@
+CREATE TABLE `users`(
+    `id` bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `firstName` VARCHAR(50) NOT NULL,
+    `lastName` VARCHAR(50) NOT NULL,
+    `email` VARCHAR(50) NOT NULL,
+    `mobile` VARCHAR(50) NOT NULL,
+    `password` VARCHAR(50) NOT NULL,
+    `otp` VARCHAR(50) NOT NULL DEFAULT '0',
+    `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+    `Updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP() ON UPDATE CURRENT_TIMESTAMP()
+
+
+) 

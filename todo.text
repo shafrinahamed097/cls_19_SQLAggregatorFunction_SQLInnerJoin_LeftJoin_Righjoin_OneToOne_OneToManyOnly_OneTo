@@ -27,3 +27,9 @@ BASIC Query Writing:
 
     * Update Data: -> SQL
       UPDATE students SET `name`="Shakib" WHERE `id`=5
+
+      * 4 types of join:
+           1. Inner join (Slow Software / Application)
+           2. Full Join (Cross Join) -> No Applicable 
+           3. Left Join
+           4. Right Join
