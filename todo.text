@@ -1,0 +1,29 @@
+Tools: 
+    1. MySQL Installation XAMPP + PHPMyAdmin
+    2. VS Code DB Extension
+
+BASIC Query Writing:
+   1. What is DataBase?
+   2. What is table?
+   3. What is row, column?
+   4. Query from GUI insert, delete, edit, select (CRUD)
+   5. Query from SQL insert, delete, edit, select (CRUD)
+    
+
+
+    * Insert Data: -> SQL
+         INSERT INTO Studnets (`Name`, `Roll`, `City`) VALUES ("Mr.Shakib", "007", "Noakhali")
+
+   
+    * Delete Data: -> SQL
+            DELETE FROM Students WHERE `id` = 1
+
+    * Show Data: -> SQL
+      *Full Table show:
+          SELECT *FROM Students
+       
+       *Only One Id Data Show:
+           SELECT *FROM Students WHERE `id`=5
+
+    * Update Data: -> SQL
+      UPDATE students SET `name`="Shakib" WHERE `id`=5
