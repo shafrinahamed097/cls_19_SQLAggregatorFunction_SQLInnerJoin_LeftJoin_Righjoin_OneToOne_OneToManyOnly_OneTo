@@ -1,5 +1,5 @@
 CREATE TABLE `users`(
-    `id` bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `firstName` VARCHAR(50) NOT NULL,
     `lastName` VARCHAR(50) NOT NULL,
     `email` VARCHAR(50) NOT NULL,
