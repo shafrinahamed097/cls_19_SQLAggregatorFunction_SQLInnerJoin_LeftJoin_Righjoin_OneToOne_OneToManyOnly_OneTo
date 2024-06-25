@@ -1,0 +1,14 @@
+CREATE TABLE `invoices`(
+    `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `total` VARCHAR(50) NOT NULL,
+    `discount` VARCHAR(50) NOT NULL,
+    `vat` VARCHAR(50) NOT NULL,
+    `user_id` bigint(20) UNSIGNED NOT NULL,
+    `customer_id` bigint(20) UNSIGNED NOT NULL,
+    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+    `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP() ON UPDATE CURRENT_TIMESTAMP(),
+    FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE,
+    Foreign Key (`customer_id`) REFERENCES `customers`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE
+
+
+) 
